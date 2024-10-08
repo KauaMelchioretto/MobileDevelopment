@@ -15,7 +15,6 @@ import androidx.annotation.Nullable;
 public class SimplePaint extends View {
     Path myPath;
     Paint myPaint;
-
     public SimplePaint(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
 
@@ -58,4 +57,5 @@ public class SimplePaint extends View {
         invalidate();
         return super.onTouchEvent(event);
     }
+
 }
