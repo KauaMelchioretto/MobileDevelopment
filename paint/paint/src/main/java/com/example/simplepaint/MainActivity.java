@@ -1,8 +1,6 @@
 package com.example.simplepaint;
 
 import androidx.appcompat.app.AppCompatActivity;
-
-import android.graphics.drawable.shapes.Shape;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -27,8 +25,10 @@ public class MainActivity extends AppCompatActivity {
         colorPickerView.setColorListener(new ColorListener() {
             @Override
             public void onColorSelected(int color, boolean fromUser) {
-                SimplePaint simplePaint = findViewById(R.id.simplePaint);
-                simplePaint.myPaint.setColor(color);
+                if(fromUser) {
+                    SimplePaint simplePaint = findViewById(R.id.simplePaint);
+                    simplePaint.myPaint.setColor(color);
+                }
             }
         });
 
