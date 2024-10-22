@@ -6,54 +6,88 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
         android:text="Paint"
         android:textColor="@color/black"
         android:textSize="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.462"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        tools:layout_editor_absoluteY="-5dp" />
 
     <com.example.simplepaint.SimplePaint
         android:id="@+id/simplePaint"
-        android:layout_width="413dp"
-        android:layout_height="520dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginEnd="24dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="76dp"
         app:layout_constraintBottom_toBottomOf="parent"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.816" />
+        app:layout_constraintTop_toBottomOf="@+id/colorPickerView"
+
+        />
 
     <com.skydoves.colorpickerview.ColorPickerView
         android:id="@+id/colorPickerView"
-        android:layout_width="61dp"
-        android:layout_height="64dp"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
         app:debounceDuration="200"
-        app:layout_constraintBottom_toTopOf="@+id/simplePaint"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintEnd_toStartOf="@+id/penButton"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <Button
+    <ImageButton
+        android:id="@+id/circleButton"
+        android:layout_width="67dp"
+        android:layout_height="48dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/penButton"
+        app:layout_constraintEnd_toStartOf="@+id/squareButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/penButton"
+        app:layout_constraintTop_toTopOf="@+id/penButton"
+        app:srcCompat="@drawable/circle_icon" />
+
+    <ImageButton
+        android:id="@+id/penButton"
+        android:layout_width="52dp"
+        android:layout_height="46dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/colorPickerView"
+        app:layout_constraintEnd_toStartOf="@+id/circleButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/colorPickerView"
+        app:layout_constraintTop_toTopOf="@+id/colorPickerView"
+        app:srcCompat="@drawable/pen_svgrepo_com" />
+
+    <ImageButton
         android:id="@+id/squareButton"
-        android:layout_width="132dp"
-        android:layout_height="49dp"
-        android:text="Quadrado"
-        app:layout_constraintBottom_toTopOf="@+id/simplePaint"
+        android:layout_width="64dp"
+        android:layout_height="53dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/square"
+        app:layout_constraintBottom_toBottomOf="@+id/circleButton"
+        app:layout_constraintEnd_toStartOf="@+id/undoButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/circleButton"
+        app:layout_constraintTop_toTopOf="@+id/circleButton" />
+
+    <ImageButton
+        android:id="@+id/undoButton"
+        android:layout_width="63dp"
+        android:layout_height="51dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/squareButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.25" />
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/squareButton"
+        app:layout_constraintTop_toTopOf="@+id/squareButton"
+        app:srcCompat="@drawable/undo_left_svgrepo_com" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
