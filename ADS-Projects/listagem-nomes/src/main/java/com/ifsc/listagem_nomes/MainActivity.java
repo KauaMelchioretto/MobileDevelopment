@@ -30,9 +30,15 @@ public class MainActivity extends AppCompatActivity {
         nomes.add("Gustavo");
         nomes.add("Rodrigo");
 
-//        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-//                R.layout.);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                android.R.layout.simple_list_item_1,
+                android.R.id.text1,
+                nomes);
 
-//        listView.setAdapter(adapter);
+        listView.setAdapter(adapter);
+
+        addButton.setOnClickListener(view -> {
+            adapter.add(editText.getText().toString());
+        });
     }
 }

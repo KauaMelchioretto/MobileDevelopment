@@ -5,16 +5,13 @@
       <entry key="app">
         <State />
       </entry>
-      <entry key="app.listagem-nomes">
+      <entry key="launcher">
         <State />
       </entry>
       <entry key="listagem-nomes">
         <State />
       </entry>
       <entry key="listagemdados">
-        <State />
-      </entry>
-      <entry key="listagemdados.listagem-nomes">
         <State />
       </entry>
       <entry key="paint">
