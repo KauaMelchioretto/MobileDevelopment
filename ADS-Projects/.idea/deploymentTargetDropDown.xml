@@ -17,6 +17,9 @@
       <entry key="paint">
         <State />
       </entry>
+      <entry key="sqliteex">
+        <State />
+      </entry>
     </value>
   </component>
 </project>
