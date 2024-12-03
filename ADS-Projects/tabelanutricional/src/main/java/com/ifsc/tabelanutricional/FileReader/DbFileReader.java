@@ -1,4 +1,4 @@
-package com.ifsc.tabelanutricional;
+package com.ifsc.tabelanutricional.FileReader;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
