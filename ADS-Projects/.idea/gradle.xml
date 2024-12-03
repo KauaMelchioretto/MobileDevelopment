@@ -16,6 +16,7 @@
             <option value="$PROJECT_DIR$/paint" />
             <option value="$PROJECT_DIR$/sensores" />
             <option value="$PROJECT_DIR$/sqliteex" />
+            <option value="$PROJECT_DIR$/tabelanutricional" />
           </set>
         </option>
         <option name="resolveExternalAnnotations" value="false" />
