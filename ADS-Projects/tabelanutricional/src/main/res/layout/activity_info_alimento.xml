@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/codigo_alimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Código:"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/nome_alimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Nome:"
+        app:layout_constraintStart_toStartOf="@id/codigo_alimento"
+        app:layout_constraintTop_toBottomOf="@id/codigo_alimento" />
+
+    <TextView
+        android:id="@+id/cod_preparo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Código preparo:"
+        app:layout_constraintStart_toStartOf="@id/nome_alimento"
+        app:layout_constraintTop_toBottomOf="@id/nome_alimento" />
+
+    <TextView
+        android:id="@+id/forma_preparo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Forma preparo:"
+        app:layout_constraintStart_toStartOf="@id/cod_preparo"
+        app:layout_constraintTop_toBottomOf="@id/cod_preparo" />
+
+    <TextView
+        android:id="@+id/colesterol_alimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Colesterol (mg):"
+        app:layout_constraintStart_toStartOf="@id/forma_preparo"
+        app:layout_constraintTop_toBottomOf="@id/forma_preparo" />
+
+    <TextView
+        android:id="@+id/categoria_alimento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Categoria:"
+        app:layout_constraintStart_toStartOf="@id/colesterol_alimento"
+        app:layout_constraintTop_toBottomOf="@id/colesterol_alimento" />
+
+    <TextView
+        android:id="@+id/acucares_adicao_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Açúcares Adicionados:"
+        app:layout_constraintStart_toStartOf="@id/categoria_alimento"
+        app:layout_constraintTop_toBottomOf="@id/categoria_alimento" />
+
+    <TextView
+        android:id="@+id/acucares_totais_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Açúcares Totais:"
+        app:layout_constraintStart_toStartOf="@id/acucares_adicao_g"
+        app:layout_constraintTop_toBottomOf="@id/acucares_adicao_g" />
+
+    <TextView
+        android:id="@+id/axidograxos_linoleicos_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ácido Graxos Linoleicos:"
+        app:layout_constraintStart_toStartOf="@id/acucares_totais_g"
+        app:layout_constraintTop_toBottomOf="@id/acucares_totais_g" />
+
+    <TextView
+        android:id="@+id/axidograxos_linoleinos_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ácido Graxos Linoleínos:"
+        app:layout_constraintStart_toStartOf="@id/axidograxos_linoleicos_g"
+        app:layout_constraintTop_toBottomOf="@id/axidograxos_linoleicos_g" />
+
+    <TextView
+        android:id="@+id/axidograxo_trans_totais_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ácido Graxos Trans Totais:"
+        app:layout_constraintStart_toStartOf="@id/axidograxos_linoleinos_g"
+        app:layout_constraintTop_toBottomOf="@id/axidograxos_linoleinos_g" />
+
+    <TextView
+        android:id="@+id/axidosgraxos_saturados_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ácido Graxos Saturados:"
+        app:layout_constraintStart_toStartOf="@id/axidograxo_trans_totais_g"
+        app:layout_constraintTop_toBottomOf="@id/axidograxo_trans_totais_g" />
+
+    <TextView
+        android:id="@+id/axidosgraxos_monosaturados_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ácido Graxos Monosaturados:"
+        app:layout_constraintStart_toStartOf="@id/axidosgraxos_saturados_g"
+        app:layout_constraintTop_toBottomOf="@id/axidosgraxos_saturados_g" />
+
+    <TextView
+        android:id="@+id/axidosgraxos_polisaturados_g"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ácido Graxos Poliinsaturados:"
+        app:layout_constraintStart_toStartOf="@id/axidosgraxos_monosaturados_g"
+        app:layout_constraintTop_toBottomOf="@id/axidosgraxos_monosaturados_g" />
+</androidx.constraintlayout.widget.ConstraintLayout>
